@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Ice Cream</title>
+    <link rel="stylesheet" href="Ice_cream_CSS5.css">
+</head>
+<body>
+    
+    <nav id="navigation">
+        <div id="logoInNav" title="COLD7 Logo"></div>
+        <a id="coneIceCream" href="Ice_cream_HTML3.html" title="Select Cone Ice Cream"></a>
+        <a id="cupIceCream" href="Ice_cream_HTML4.html" title="Select Cup Ice Cream"></a>
+        <a id="barIceCream" href="Ice_cream_HTML5.html" title="Select Bar Ice Cream"></a>
+        <a id="bill" onclick="goToBill()" title="See The Cart"></a>
+    </nav>
+
+    <div id="falseDiv"></div>
+
+    <div id="mainSection">
+    <button id="trolley" onclick="goToBill()" title="See The Cart"></button>
+    <div id="screen"></div>
+    <div id="addons">
+    <h3>Add Extras</h3>
+
+    <label>
+        <input type="checkbox" value="20" class="addon"> Choco Chips (+20)
+    </label>
+    <label>
+        <input type="checkbox" value="15" class="addon"> Sprinkles (+15)
+    </label>
+    <label>
+        <input type="checkbox" value="25" class="addon"> Chocolate Syrup (+25)
+    </label>
+    <br><br>
+    <label> Scoops:
+        <input type="number" id="scoops" value="1" min="1" max="5">
+    </label>
+</div>
+<button id="addCartBtn" onclick="finalAddToCart()">Add To Cart</button>
+    <a id="buy" onclick="buy()" title="Buy"></a>
+    </div>
+
+
+    <h2 style="text-align:center; margin-top:20px;">Choose Your Flavor</h2>
+    <div id="buttons">
+    <button class="flavours" id="vanilla"  onclick="addToCart(15)">Vanilla</button>
+    <button class="flavours" id="chocolate"  onclick="addToCart(16)">Chocolate</button>
+    <button class="flavours" id="strawberry"  onclick="addToCart(17)">Strawberry</button>
+    <button class="flavours" id="mango"  onclick="addToCart(18)">Mango</button>
+    <button class="flavours" id="mint"  onclick="addToCart(19)">Mint</button>
+    <button class="flavours" id="blueberry"  onclick="addToCart(20)">Blueberry</button>
+    <button class="flavours" id="butterscotch"  onclick="addToCart(21)">Butterscotch</button>
+    </div>
+    <script src="Ice_cream_Javascript.js"></script>
+</body>
+</html>

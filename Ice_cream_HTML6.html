@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ice Cream Cart</title>
+    <link rel="stylesheet" href="Ice_cream_CSS6.css">
+</head>
+<nav class="navbar">
+    <h2 class="logo">🍦 Cold7</h2>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Ice_cream_HTML2.html">Welcome</a> </li>
+        
+        <li class="dropdown">
+            <a href="#">Menu ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="Ice_cream_HTML3.html">Cone</a></li>
+                <li><a href="Ice_cream_HTML4.html">Cup</a></li>
+                <li><a href="Ice_cream_HTML5.html">Bar</a></li>
+            </ul>
+        </li>
+
+        <li><a href="Ice_cream_HTML6.html">Cart 🛒</a></li>
+        <li><a href="Ice_cream_HTML7.html" class="buy-btn">Buy</a></li>
+    </ul>
+</nav>
+<!--------------------------------->
+<body onload="loadBill()">
+
+    <h1>Your Ice Cream Bill</h1>
+    <table id="billTable">
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </table>
+
+    <h2 id="totalAmount"></h2>
+    <button onclick="clearCart()">Clear Cart</button>
+    <script src="Ice_cream_Javascript.js"></script>
+
+</body>
+</html>

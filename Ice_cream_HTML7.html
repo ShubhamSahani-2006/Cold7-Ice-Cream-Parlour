@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Ice cream Payment</title>
+    <link rel="stylesheet" href="Ice_cream_CSS7.css">
+</head>
+<nav class="navbar">
+    <h2 class="logo">🍦 Cold7</h2>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Ice_cream_HTML2.html">Welcome</a> </li>
+       
+        <li class="dropdown">
+            <a href="#">Menu ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="Ice_cream_HTML3.html">Cone</a></li>
+                <li><a href="Ice_cream_HTML4.html">Cup</a></li>
+                <li><a href="Ice_cream_HTML5.html">Bar</a></li>
+            </ul>
+        </li>
+
+        <li><a href="Ice_cream_HTML6.html">Cart 🛒</a></li>
+        <li><a href="Ice_cream_HTML7.html" class="buy-btn">Buy</a></li>
+    </ul>
+</nav>
+<!--------------------------------------------------->
+<body onload="generateBill()">
+
+    <div id="billContainer">
+        <h1>Cold7 Ice Cream Parlour</h1>
+        <p id="date"></p>
+
+        <table id="billTable">
+            <tr>
+                <th>Image</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </table>
+
+        <h2 id="totalAmount"></h2>
+
+        <button  onclick="clearCart()" >Finish</button>
+    </div>
+
+
+<!--------------------------This code is for popup button--------------------------------->
+<div id="loginModal">
+    <div id="loginBox">
+        <h2>Login</h2>
+
+        <input type="text" id="loginUser" placeholder="Enter Username"><br>
+        <input type="password" id="loginPass" placeholder="Enter Password"><br>
+        <button type="button" onclick="checkLogin()">Login</button>
+       
+        <p id="errorMsg"></p>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------->
+<script src="Ice_cream_Javascript.js"></script>
+
+</body>
+</html>

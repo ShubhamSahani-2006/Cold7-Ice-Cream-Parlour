@@ -1,0 +1,185 @@
+#landingPage{
+    text-align: center;
+    padding: 20px;
+}
+
+/* HERO */
+#hero{
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 80px 20px;
+    border-radius: 20px;
+}
+
+#hero h1{
+    font-size: 50px;
+    color: #5a1e00;
+}
+
+#hero p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#hero button{
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ABOUT */
+#about{
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#about h2{
+    font-size: 35px;
+    color: brown;
+}
+
+#about p{
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+}
+
+/* MENU */
+#menu{
+    margin-top: 50px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card h3{
+    color: darkred;
+}
+
+.card p{
+    font-size: 18px;
+}
+
+/* NAVBAR MAIN */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo{
+    color: #ff4d6d;
+    font-size: 24px;
+}
+
+/* LINKS */
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links li{
+    position: relative;
+}
+
+/* LINK STYLE */
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover{
+    color: #ff4d6d;
+}
+
+/* BUY BUTTON */
+.buy-btn{
+    background: #ff4d6d;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.buy-btn:hover{
+    background: #e63950;
+}
+
+/* DROPDOWN */
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu li{
+    margin: 10px 0;
+}
+
+/* SHOW DROPDOWN */
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+/* DROPDOWN FIX */
+.dropdown{
+    position: relative;
+}
+
+/* IMPORTANT CHANGE */
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;   /* instead of 30px */
+    left: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    min-width: 150px;
+}
+
+/* Add this */
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* EXTRA: make hover area bigger */
+.dropdown > a{
+    padding: 10px 5px;
+    display: inline-block;
+}
